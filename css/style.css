@@ -1,0 +1,563 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8em;
+  font-weight: 100;
+  color: #808080;
+}
+
+/*top bar*/
+
+#top-bar {
+  background-color: #fbfbfb;
+  border-color: #f0f0f0;
+  border-style: solid;
+  border-bottom-width: 1px;
+  height: 4.5em;
+}
+
+.top-text {
+  margin-top: 1.7em;
+  display: inline-block;
+}
+
+#phone {
+  margin-left: 1.3em;
+  margin-right: 1em;
+}
+
+#phone .fa-phone {
+  margin-right: .3em;
+}
+
+#email {
+  border-left: 1px solid;
+  border-color: #E0E0E0;
+  padding-left: 1.2em;
+}
+
+#email .fa-envelope {
+  margin-right: .3em;
+}
+
+#top-text-right {
+  float: right;
+}
+
+#admin {
+  border-left: 1px solid;
+  border-color: #E0E0E0;
+  padding-left: 1.1em;
+  margin-right: 1em;
+}
+
+#admin .fa-chevron-circle-down {
+  margin-right: .3em;
+}
+
+#crm {
+  border-left: 1px solid;
+  border-color: #E0E0E0;
+  padding-left: 1.1em;
+  margin-right: 1em;
+}
+
+#crm .fa-spinner {
+  margin-right: .3em;
+}
+
+/*navigation*/
+
+img {
+  max-width: 100%;
+}
+
+#navigation {
+  background-color: white;
+  height: 9em;
+  opacity: .9;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.nav a:visited {
+  color: #808080;
+}
+
+.nav a:hover, a:active {
+  color: black;
+}
+
+.subnav a:hover {
+  color: green;
+}
+
+.subnav a:visited {
+  color: black;
+}
+
+/*hover effect for subnav links*/
+html ul.topnav li ul.subnav li a:hover {
+  color: green;
+}
+
+.nav {
+  float:right;
+  margin-top: 4.5em;
+  width: 41em;
+}
+
+#logo {
+  height: 13em;
+  width: 13em;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+/*navigation*/
+ul.topnav > li {
+  float: left;
+  position: relative;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+ul.topnav li a {
+  text-decoration: none;
+}
+
+/*drop-down trigger styles*/
+
+ul.topnav li ul.subnav {
+  /*list-style: none;*/
+  position: absolute;
+  display: none;
+  float: left;
+  margin-top: 1em;
+  width: 12em;
+  background-color: white;
+  /*border: 2px solid black;*/
+}
+
+ul.topnav li ul.subnav li {
+}
+
+ul.topnav li ul.subnav li a {
+  float: left;
+  width: auto;
+  padding-left: 1em;
+}
+
+ul.topnav li ul.subnav li a hr {
+  margin-left: -1em;
+  width: 11.9em;
+  border-width: .1em;
+  color: #E8E8EE;
+  opacity: .2;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+ul.topnav li ul.subnav li a hr:nth-child(2) {
+  margin-bottom: 0;
+}
+
+#home, #about-us, #properties, #rentals, #selling, #landlord, #contact-us {
+  margin: 1em;
+}
+
+/*fix navigation bar*/
+
+.stuck {
+    position:fixed;
+    z-index:100;
+    width:100%;
+    top:0;
+}
+
+/*end navigation*/
+
+.landscape-pic {
+  display: block;
+}
+
+.best-deals {
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 2.5em;
+}
+
+.fa-home {
+  color: green;
+  margin-bottom: .8em;
+}
+
+.best-deals p:first-of-type {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.best-deals hr {
+  margin-top: 1.5em;
+  width: 6%;
+  border-width: .1em;
+  border-color: green;
+}
+
+/*parallax*/
+.skyline {
+  width: 100%;
+  height: 16em;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(/Users/kristiankanya/Documents/Code/omg-property/css/images/home-call-to-action-bg.jpg);
+  background-attachment: fixed;
+}
+
+.skyline div {
+  padding-top: 3em;
+}
+
+.skyline p {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: .25em;
+}
+
+.skyline p:nth-of-type(1) {
+  font-weight: 100;
+}
+
+.skyline p hr {
+  color: #E8E8EE;
+  width: 11em;
+}
+
+.skyline p:nth-of-type(2) {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*end parallax*/
+
+.latest-properties {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.latest-properties p:nth-of-type(1) {
+  margin-top: .3em;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.latest-properties p:nth-of-type(2) {
+  margin-top: .8em;
+}
+
+.latest-properties hr {
+  margin-top: 1.5em;
+  width: 6%;
+  border-width: .1em;
+  border-color: green;
+}
+
+/*latest properties list*/
+
+.latest-properties-list ul.menu {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.latest-properties-list ul.menu li {
+  margin-left: .5em;
+  margin-right: .5em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.latest-properties-list ul.menu li a {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: Verdana, sans-serif;
+}
+
+.latest-properties-list ul.menu li a:visited {
+  color: black;
+}
+
+/*property listings*/
+
+.property-listings-container {
+  text-align: center;
+}
+
+ul.property-listings {
+}
+
+ul.property-listings > li {
+  width: 25.6em;
+  display: inline-block;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+ul.property-listings .nvr-prop-img {
+  position: relative;
+}
+
+ul.property-listings .nvr-upper-meta {
+  margin-right: 25em;
+}
+
+ul.property-listings .nvr-upper-meta .meta-purpose {
+  font-size: 1em;
+  background-color: green;
+  color: white;
+  margin-left: .5em;
+  padding: 1em;
+  position: absolute;
+}
+
+ul.property-listings .nvr-upper-meta .meta-price {
+  font-size: 1em;
+  margin-left: 4em;
+  background-color: green;
+  color: white;
+  padding: 1em;
+  position: absolute;
+}
+
+/*ul.property-listings .nvr-prop-img p {
+  margin-top: 4em;
+  display: absolute;
+}*/
+
+ul.property-listings .inner-icons {
+  position: absolute;
+  margin-left: 8em;
+  margin-top: 5em;
+  display: none;
+}
+
+ul.property-listings .nvr-prop-img .fa-search-plus {
+  color: black;
+  background: white;
+  padding: 1.5em;
+  opacity: .8;
+  border-radius: 50%;
+  margin-right: .3em;
+}
+
+ul.property-listings .nvr-prop-img .fa-eye {
+  color: black;
+  background: white;
+  padding: 1.5em;
+  opacity: .8;
+  border-radius: 50%;
+}
+
+ul.property-listings .nvr-prop-text {
+  border-color: #f0f0f0;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  font-size: 1.1em;
+  padding-top: .1em;
+  padding-left: .8em;
+  padding-bottom: 1.3em;
+  height: 4em;
+}
+
+ul.property-listings .nvr-prop-text h2 {
+  margin-top: 1em;
+  margin-bottom: .6em;
+}
+
+ul.property-listings .nvr-prop-text a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+ul.property-listings .nvr-prop-text a:visited {
+  color: black;
+}
+
+ul.property-listings .nvr-prop-meta {
+  border-color: #f0f0f0;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  padding-left: 1.3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+ul.property-listings .nvr-prop-meta span {
+  margin-right: .9em;
+}
+
+/*end property listings*/
+
+/*footer*/
+
+.footer {
+  background-color: #333333;
+}
+
+.footer-container {
+  padding-top: 5em;
+  height: 30em;
+}
+
+.footer-container > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footcol1 {
+  margin-left: 1em;
+  width: 21.5em;
+}
+
+.footer-container h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+  color: white;
+}
+
+.footer-container p {
+  color: #999999;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.footcol2 {
+  width: 20em;
+}
+
+.footcol2 h1 {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.footcol2 p {
+  margin-bottom: 1.2em;
+}
+
+.footer-container a:visited {
+  color: white;
+}
+
+.footer-container i {
+  height: 1.5em;
+  width: 1.5em;
+  padding-left: .8em;
+  padding-top: .8em;
+  margin-bottom: .7em;
+  margin-right: 1em;
+}
+
+.footer-container a {
+  text-decoration: none;
+}
+
+.footcol3 {
+  width: 20em;
+}
+
+.fa-facebook {
+  background-color: #3e5a99;
+}
+
+.fa-flickr {
+  background-color: #F52887;
+}
+
+.fa-google-plus {
+  background-color: #F75D59;
+}
+
+.fa-twitter {
+  background-color: #38ACEC;
+}
+
+.fa-youtube {
+  background-color: #CD0000;
+}
+
+.footcol4 input {
+  height: 3.5em;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.footcol4 p {
+  margin-bottom: 1.5em;
+}
+
+.footcol4 .sign-up {
+  color: white;
+  padding-top: 1.2em;
+  padding-bottom: 1.3em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  background-color: green;
+  display: inline-block;
+  margin-left: -.3em;
+}
+
+/*.footcol4 .sign-up {
+  font-size: 1em;
+  background-color: green;
+  color: white;
+  padding: 1em;
+  width: 5em;
+  height: 1.5em;
+  margin-left: -.2em;
+  margin-top: -.5em;
+  display: inline-block;
+}*/
+
+/*ul.property-listings .nvr-upper-meta .meta-purpose {
+  font-size: 1em;
+  background-color: green;
+  color: white;
+  margin-left: .5em;
+  padding: 1em;
+  position: absolute;
+}*/
+
+/*random*/
+
+.green-underline {
+  border-color: green;
+  border-style: solid;
+  border-bottom-width: 4px;
+  padding-bottom: .5em;
+}
